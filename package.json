@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/fab971cool/go-fullstack/issues"
   },
-  "homepage": "https://github.com/fab971cool/go-fullstack#readme"
+  "homepage": "https://github.com/fab971cool/go-fullstack#readme",
+  "dependencies": {
+    "express": "^4.17.2"
+  }
 }
