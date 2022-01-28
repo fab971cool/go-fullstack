@@ -1,0 +1,19 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fab971cool/go-fullstack.git"
+  },
+  "author": "fab971cool",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fab971cool/go-fullstack/issues"
+  },
+  "homepage": "https://github.com/fab971cool/go-fullstack#readme"
+}
