@@ -1,6 +1,8 @@
 const express = require('express');
 
 const app = express();
+const mongoose = require('mongoose');
+
 app.use(express.json());
 
 app.use((req, res, next) => {
@@ -10,6 +12,13 @@ app.use((req, res, next) => {
     res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, PATCH, OPTIONS');
     next();
 })
+
+mongoose.connect("mongodb+srv://admin:admin@db-fullstack.y3lfz.mongodb.net/myFirstDatabase?\
+retryWrites=true&w=majority", 
+{
+    useNewUrlParser : true,
+    useUnifiedTopology : true}).then(() => console.log("Connection success to MongoDB\n"))
+    .catch(() => console.log("Failed to connect to MongoDB \n"));
 
 app.post('/api/stuff', (req, res, next) =>{
     console.log(req.body);
